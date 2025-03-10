@@ -15,11 +15,7 @@ BTT released the v3.0.0 image that uses debian 12, but get the V2.4.3. I've full
 
 [Here's the download page.](https://github.com/bigtreetech/CB1/releases/tag/V2.3.4) Save it somewhere you'll be able to access.
 
-## Flash
-If you have an emmc CB1, skip this section and follow this: 
-
-If you have a normal CB1 or Pi1, stay here. c:
-____________________________________________________________
+## Write
 Grab an SD card that's atleast 8GB, and plug it into your device. (Windows is preferred but Mac and Linux work too). It is also recommended to unplug other external storage devices from your computer to reduce confusion.
 
 Now open the Pi Imager.
@@ -32,6 +28,9 @@ Click "Write" and if it prompts to change settings, select "No, Clear Settings".
 
 When it finishes writing, unplug the SD card and plug it back in, just to make sure it reads correctly.
 ## Configure settings
+### WiFi
+If you're using ethernet, skip this section and go to "Overlays"
+
 Go to file explorer and click on the SD card. There should be a file named `system.cfg`. Edit it in a notepad or any other supported editor.
 
 Under the Wifi section, find the wifi name and password settings. Set your WiFi name and password. It should be something like this:
@@ -41,3 +40,14 @@ WIFI_SSID="SuzukiWifi"
 # wifi password
 WIFI_PASSWD="SuzukiWifiPass"
 ```
+__________________________________________________________
+### Overlays
+Really the only one that's important for us is the tft display, since a lot of people would be using that.
+
+i2c doesn't work on these (because BTT), spi isnt really needed if you're not using it, and everything else is some specific thing that one in a million people uses. c:
+
+To change overlays, go to `BoardEnv.txt`, and uncomment what you need.
+
+For a TFT display, uncomment `overlays=tft35_spi`, don't forget to save and restart.
+# First boot
+Plug the SD card into the Pi or CB1. For CB1 make sure it's the right slot.
