@@ -120,5 +120,8 @@ Download PuTTY from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 
 Paste the IP address we got earlier into the terminal and click open:
 
-<img src="./Images/putty.png">
+It'll ask for the user, if you used the v2.4.3 image, both the user and the password will be "biqu", when you type the password it's not going to show up.
 
+<img src="./Images/PuTTY.gif">
+
+The SSH terminal should open.
