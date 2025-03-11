@@ -60,4 +60,22 @@ To change overlays, go to `BoardEnv.txt`, and uncomment what you need.
 
 For a TFT display, uncomment `overlays=tft35_spi`, don't forget to save and restart.
 # First boot
-Plug the SD card into the Pi or CB1. For CB1 make sure it's the right slot.
+Plug the SD card into the Pi or CB1. For CB1 make sure it's the right slot. You can now power on the Pi/CB1.
+
+When it boots, you'll need to find it's IP address. This can be done multiple ways:
+1. (Works most times) Use an IP scanner to find it.
+2. (Depends on your router) Go to the router terminal and find it through attached devices.
+
+Everything else can be considered a mental disability :3
+
+## IP Scanner
+We'll be using Zenmap for the scanner, it's a bit on the more complicated side but it also has the most features. It also has a version for all operating systems c:
+
+Download from [here](https://nmap.org/download.html). Keep all of the default settings.
+
+Here's how the main menu should look:
+
+<img src="./Images/zenmap.png">
+
+Now you'll need to open command prompt and find your router info, to do that open command prompt (if windows), or terminal (if on mac). Linux people already know what to do.
+
