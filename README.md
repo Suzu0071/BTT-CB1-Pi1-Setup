@@ -79,3 +79,46 @@ Here's how the main menu should look:
 
 Now you'll need to open command prompt and find your router info, to do that open command prompt (if windows), or terminal (if on mac). Linux people already know what to do.
 
+Get the subnet mask and the default gateway on windows:
+
+<img src="./Images/ipconfig.png">
+
+My subnet is `255.255.255.0` and gateway is `192.168.0.1`. This is what I'll be using for my examples.
+
+Now, you'll need to look at this able and find out your network range:
+
+<img src="./Images/Subnet-Range.png">
+
+For my subnet of 255.255.255.0 the network range is /24. The slash is important!
+
+Now go back to zenmap and put this into the command line:
+```
+nmap -p22 --open <gateway><range>
+```
+So for example I'll put `nmap -p22 --open 192.168.0.1/24`.
+
+Then click scan.
+
+<img src="./Images/zenmap-scan.png">
+
+It could take a while to scan depending on your network range and the amount of devices you have.
+
+When it finishes, it should spit out some informations about a device:
+
+<img src="./Images/zenmap-scanned.png">
+
+The most important part here is the `192.168.0.19`, that's the IP address of your CB1/Pi. Copy it somehere safe. And you can now close zenmap.
+
+*If multiple devices show up, you'll have to try and error your way to finding it*
+
+## SSH
+Now the fun part, getting into the CB1/Pi.
+
+For this, you'll need to download PuTTY if you're on windows. If you're on mac, you can do it through terminal. Linux users can figure out OpenSSH by themselves, I'm too stupid for that anyway c:
+
+Download PuTTY from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Most will need the 64-bit x86 .msi. Install it with all default settings.
+
+Paste the IP address we got earlier into the terminal and click open:
+
+<img src="./Images/putty.png">
+
