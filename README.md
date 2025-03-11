@@ -9,7 +9,7 @@ First, you'll need to download Raspberry Pi imager from [here](https://github.co
 ## BTT Image
 Now the actual image.
 
-BTT released the v3.0.0 image that uses debian 12, but get the V2.4.3. I've fully tested it and I know that it works wihtout issues.
+BTT released the v3.0.0 image that uses debian 12, but get the V2.3.4 I've fully tested it and I know that it works wihtout issues.
 
 *Download the `CB1_Debian11_minimal_kernel5.16_20240319.img.xz`, theres no use for the klipper version, it only brings more potential problems.*
 
