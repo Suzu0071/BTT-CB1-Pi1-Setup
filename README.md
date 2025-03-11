@@ -73,7 +73,7 @@ Everything else can be considered a mental disability :3
 ## IP Scanner
 We'll be using Zenmap for the scanner, it's a bit on the more complicated side but it also has the most features. It also has a version for all operating systems c:
 
-Download from [here](https://nmap.org/download.html). Keep all of the default settings.
+Download from [here](https://nmap.org/download.html). Keep all of the default settings for the installation.
 
 Here's how the main menu should look:
 
@@ -113,6 +113,27 @@ The most important part here is the `192.168.0.19`, that's the IP address of you
 
 *If multiple devices show up, you'll have to try and error your way to finding it*
 
+## Router Portal
+If you want to use the router portal you'll need to go to command prompt and get your default gateway. Paste this into command prompt:
+
+```
+ipconfig
+```
+
+This will give you a bunch of info about your network adapters. Find the Wi-Fi section and look for `Default Gateway`. Copy it to a notepad.
+
+Open a web browser of your choice and paste that address into the line.
+
+<img src="./Images/web-portal.png">
+
+When you enter it, it should ask for username and password. `Admin` and `password` are the default for many routers but you can check for your specific one.
+
+Then find a section called `Attached devices` or something similar, it should have a list of all the IP addresses and hostnames of the devices connected to the router.
+
+Look for a hostname that includes `CB1` and get it's IP address. For me it was `192.168.0.19`.
+
+*If there's a longer IP address with letters, you can ignore it and get the normal 4 number one*
+
 ## SSH
 Now the fun part, getting into the CB1/Pi.
 
@@ -127,3 +148,11 @@ It'll ask for the user, if you used the v2.4.3 image, both the user and the pass
 <img src="./Images/PuTTY.gif">
 
 The SSH terminal should open.
+__________________________________________________________
+*Congrats, you just completed the most annoying part of the setup* c:
+
+<sup>If you got any question, contact me through Discord: @suzu00071</sup>
+__________________________________________________________
+With love, from Suzuki
+
+UwU
