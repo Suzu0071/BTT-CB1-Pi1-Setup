@@ -56,6 +56,8 @@ Really the only one that's important for us is the tft display, since a lot of p
 
 i2c doesn't work on these (because BTT), spi isnt really needed if you're not using it, and everything else is some specific thing that one in a million people uses. c:
 
+BTT CB1/Pi also doesn't support i2c over gpio pins. -_-
+
 To change overlays, go to `BoardEnv.txt`, and uncomment what you need.
 
 For a TFT display, uncomment `overlays=tft35_spi`, don't forget to save and restart.
