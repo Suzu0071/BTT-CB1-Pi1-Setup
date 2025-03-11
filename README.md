@@ -24,7 +24,15 @@ Under "Device" select "No Filtering" and under "Storage" select your SD card.
 
 For "Operating System" scroll down, and click "Use Custom". It will open a file explorer window and you'll need to pick the image that you downloaded earlier.
 
-Click "Write" and if it prompts to change settings, select "No, Clear Settings".
+<img src="./Images/CustomOS.png">
+
+Click "Write" and if it prompts to change settings, select "No".
+
+<img src="./Images/OS-Settings.png">
+
+Click yes to continue.
+
+<img src="./Images/Imager-writing.png">
 
 When it finishes writing, unplug the SD card and plug it back in, just to make sure it reads correctly.
 ## Configure settings
@@ -32,6 +40,8 @@ When it finishes writing, unplug the SD card and plug it back in, just to make s
 If you're using ethernet, skip this section and go to "Overlays"
 
 Go to file explorer and click on the SD card. There should be a file named `system.cfg`. Edit it in a notepad or any other supported editor.
+
+<img src="./Images/Boot-partition.png">
 
 Under the Wifi section, find the wifi name and password settings. Set your WiFi name and password. It should be something like this:
 ```
