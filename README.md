@@ -143,7 +143,7 @@ Download PuTTY from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 
 Paste the IP address we got earlier into the terminal and click open:
 
-It'll ask for the user, if you used the v2.4.3 image, both the user and the password will be "biqu", when you type the password it's not going to show up.
+It'll ask for the user, if you used the v2.3.4 image, both the user and the password will be "biqu", when you type the password it's not going to show up.
 
 <img src="./Images/PuTTY.gif">
 
