@@ -81,6 +81,8 @@ Here's how the main menu should look:
 
 Now you'll need to open command prompt and find your router info, to do that open command prompt (if windows), or terminal (if on mac). Linux people already know what to do.
 
+For Windows, paste `ipconfig` and press enter.
+
 Get the subnet mask and the default gateway on windows:
 
 <img src="./Images/ipconfig.png">
